@@ -1,14 +1,9 @@
-coluna1  = []
-coluna2 = []
+from utils import ler_arquivo_txt
+
+
+coluna1,coluna2 = ler_arquivo_txt('day1/input.txt')
 resultado = 0
 map = {}
-
-with open("AdventOfCode/day1/input.txt", 'r') as file:
-    for line in file:
-        valores = line.split()
-        if len(valores) == 2:
-            coluna1.append(int(valores[0]))
-            coluna2.append(int(valores[1]))
 
 for valor in coluna2:
     if valor in coluna1:

@@ -1,15 +1,9 @@
-coluna1 = []
-coluna2 = []
+from utils import ler_arquivo_txt
 
 
-with open("AdventOfCode/day1/input.txt", 'r') as file:
-    for line in file:
-        valores = line.split()
-        if len(valores) == 2:
-            coluna2.append(int(valores[0]))
-            coluna1.append(int(valores[1]))
-    coluna1.sort()
-    coluna2.sort()
+coluna1, coluna2 = ler_arquivo_txt('day1/input.txt')
+coluna1.sort(),coluna2.sort()
+
 
 resultado = 0
 tamanho_lista1 = len(coluna1)
