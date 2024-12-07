@@ -2,7 +2,7 @@ coluna1 = []
 coluna2 = []
 
 
-with open("input.txt", 'r') as file:
+with open("AdventOfCode/day1/input.txt", 'r') as file:
     for line in file:
         valores = line.split()
         if len(valores) == 2:
