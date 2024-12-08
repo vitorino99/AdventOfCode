@@ -7,14 +7,10 @@ map = {}
 
 for valor in coluna2:
     if valor in coluna1:
-        if valor not in map.keys():
-            map[valor] = 1
-        else:
-            map[valor] += 1
-
-for x in coluna1:   
-    if x in map.keys():
-        resultado += x * map[x]
+        map[valor] = map.get(valor,0) + 1
+        
+for x,y in map.items(): 
+    resultado += x * y
     
 
 print(resultado)
