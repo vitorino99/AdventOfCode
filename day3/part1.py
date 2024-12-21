@@ -1,5 +1,5 @@
 import re
-from day3.utils import ler_arquivo_txt
+from utils import ler_arquivo_txt
     
 regex = r"mul\((-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)\)"
 entrada = ler_arquivo_txt('day3/input.txt')
